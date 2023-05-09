@@ -13,7 +13,7 @@ export default function PaginaInicial() {
                 <Menu />
                 <Banner />
             </main>
-            <div>
+            <div className={styles.galeria}>
                 <Galeria />
             </div>
             <Footer />
