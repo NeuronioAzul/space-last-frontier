@@ -1,0 +1,30 @@
+.header {
+    height: 100px;
+}
+
+.header .logo {
+    display: flex;
+    font-family: 'Blinker', sans-serif;
+    background: linear-gradient(to right, #c98cf1, #7b78e5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .logo img {
+    padding: 10px;
+    height: 80px;
+}
+
+.header .logo div {
+    margin-left: 10px;
+}
+
+.header .logo div p:first-child {
+    font-size: 35px;
+    margin: 10px 0 0 0; 
+}
+
+.header .logo div p:last-child {
+    font-size: 22px;
+    margin: 10px 0 0 0; 
+}
