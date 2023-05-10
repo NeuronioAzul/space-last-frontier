@@ -1,15 +1,14 @@
 import Tags from '../Tags';
 import styles from './Galeria.module.scss'
 import fotos from './fotos.json'
+import Cards from './cards';
 
 export default function Galeria() {
-    return ( 
+    return (
         <section className={styles.galeria}>
             <h2>Navegue pela galeria</h2>
             <Tags />
-            <ul className={styles.galeria__cards}>
-                
-            </ul>
+            <Cards fotos={fotos} styles={styles} />
         </section>
-     );
+    );
 }
