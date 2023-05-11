@@ -1,6 +1,6 @@
 import Tags from '../Tags';
 import styles from './Galeria.module.scss'
-import fotos from './fotos.json'
+import fotosJson from './fotos.json'
 import Cards from './cards';
 
 export default function Galeria() {
