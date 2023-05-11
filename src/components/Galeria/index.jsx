@@ -16,6 +16,10 @@ export default function Galeria() {
         setFotos(fotosFiltradas)
     }
 
+    const mostrarTodasAsFotos = () => {
+        setFotos(fotosJson)
+    }
+    
     return (
         <section className={styles.galeria}>
             <h2>Navegue pela galeria</h2>
@@ -23,6 +27,8 @@ export default function Galeria() {
                 tags={tags}
                 fotosJson={fotosJson}
                 filtrarFotos={filtrarFotos}
+                mostrarTodasAsFotos={mostrarTodasAsFotos}
+            />
             <Cards fotos={fotos} styles={styles} />
         </section>
     );
