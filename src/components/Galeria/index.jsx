@@ -7,12 +7,22 @@ import { useState } from 'react';
 export default function Galeria() {
     const [fotos, setFotos] = useState(fotosJson)
     const [tags, setTag] = useState([...new Set(fotos.map((foto) => foto.tag))])
+
+    const filtrarFotos = (tag) => {
+        const fotosFiltradas = fotosJson.filter((foto) => {
+            return foto.tag === tag
+        })
+
+        setFotos(fotosFiltradas)
+    }
+
     return (
         <section className={styles.galeria}>
             <h2>Navegue pela galeria</h2>
             <Tags
                 tags={tags}
                 fotosJson={fotosJson}
+                filtrarFotos={filtrarFotos}
             <Cards fotos={fotos} styles={styles} />
         </section>
     );
